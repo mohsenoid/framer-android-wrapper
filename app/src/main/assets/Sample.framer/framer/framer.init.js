@@ -1,7 +1,8 @@
 (function() {
 
 function isFileLoadingAllowed() {
-	return (window.location.protocol.indexOf("file") == -1)
+//	return (window.location.protocol.indexOf("file") == -1)
+    return true;
 }
 
 function isHomeScreened() {

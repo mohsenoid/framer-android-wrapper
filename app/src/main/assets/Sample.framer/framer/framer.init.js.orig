@@ -2,11 +2,11 @@
 
 function isFileLoadingAllowed() {
 <<<<<<< HEAD
+	return (window.location.protocol.indexOf("file") == -1)
+=======
 //	return (window.location.protocol.indexOf("file") == -1)
     return true;
-=======
-	return (window.location.protocol.indexOf("file") == -1)
->>>>>>> e8f94de... Add Framer sample project to Assets folder
+>>>>>>> 5cf70bc... Add WebView and load Framer project
 }
 
 function isHomeScreened() {
