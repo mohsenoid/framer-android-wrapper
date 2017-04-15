@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         settings.setAllowFileAccessFromFileURLs(true);
         settings.setJavaScriptEnabled(true);
 
+        webView.addJavascriptInterface(new JavascriptHandler(this, webView), "JavascriptHandler");
+
         webView.loadUrl("file:///android_asset/Sample.framer/index.html");
     }
 }

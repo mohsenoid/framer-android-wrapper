@@ -22,6 +22,14 @@ layerA.states.rotated =
 layerB.states.rotated =
 	rotationY: 180
 
+<<<<<<< HEAD
+# Animate states on click
+layerA.onClick ->
+	layerA.animate layerA.states.next()
+	
+layerB.onClick ->
+	layerB.animate layerB.states.next()
+=======
 DeviceComponent.displayJavaMessage = (message) ->
 	print message
 
@@ -37,3 +45,4 @@ layerB.onClick ->
 	# Android
 	if  Utils.isPhone() && Utils.isChrome
 		JavascriptHandler.javascriptCall("LayerB clicked!")
+>>>>>>> 24e95c3... Add Javascript interface as a method call handler between Framer and Android
